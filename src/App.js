@@ -1,5 +1,5 @@
 import React from 'react';
-import { auth } from './firebase';
+import { auth, db } from './firebase';
 import { Navigate } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Home';

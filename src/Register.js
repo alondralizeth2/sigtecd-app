@@ -31,33 +31,38 @@ const Register = () => {
         throw new Error('Las contraseñas no coinciden');
       }
 
-      // 1. Crear usuario con correo y contraseña
+      // Crear usuario con correo y contraseña
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         userData.email,
         userData.password
       );
 
-      // 2. Enviar correo de verificación
-      await sendEmailVerification(userCredential.user);
+      // Enviar correo de verificación
+      await sendEmailVerification(userCredential.user, {
+        url: 'http://localhost:3000/verify-email'
+      });
 
-      // 3. Guardar datos en Firestore (sin esperar verificación)
+      // Guardar datos en Firestore
       await setDoc(doc(db, 'usuarios', userCredential.user.uid), {
         nombres: userData.nombres,
         apellidos: userData.apellidos,
         email: userData.email,
         fechaNacimiento: userData.fechaNacimiento,
-        emailVerificado: false, // Inicialmente no verificado
+        emailVerificado: false,
         fechaRegistro: new Date(),
         uid: userCredential.user.uid
       });
 
-      // 4. Redirigir a página de verificación pendiente
+      // Guardar email en localStorage
+      localStorage.setItem('emailForVerification', userData.email);
+
+      // Redirigir
       navigate('/verificacion-pendiente');
 
-    } catch (err) {
+    } catch (error) {
       let errorMessage = 'Error al registrar: ';
-      switch (err.code) {
+      switch (error.code) {
         case 'auth/email-already-in-use':
           errorMessage = 'El correo ya está registrado';
           break;
@@ -68,7 +73,7 @@ const Register = () => {
           errorMessage = 'La contraseña debe tener mínimo 6 caracteres';
           break;
         default:
-          errorMessage += err.message;
+          errorMessage += error.message;
       }
       setError(errorMessage);
     } finally {
@@ -83,7 +88,6 @@ const Register = () => {
     });
   };
 
-  
   return (
     <div className="register-page">
       <header className="register-header">

@@ -4,7 +4,7 @@ import { auth, db } from './firebase';
 import { doc, updateDoc } from 'firebase/firestore';
 import './App.css';
 
-const TerminosCondiciones = () => {
+const Terminos = () => {
   const [aceptado, setAceptado] = useState(false);
   const navigate = useNavigate();
 
@@ -115,4 +115,4 @@ const TerminosCondiciones = () => {
   );
 };
 
-export default TerminosCondiciones;
+export default Terminos;
