@@ -40,7 +40,7 @@ const Register = () => {
 
       // Enviar correo de verificación
       await sendEmailVerification(userCredential.user, {
-        url: 'http://localhost:3000/verify-email'
+        url: 'http://localhost:3000/verify-email-link'
       });
 
       // Guardar datos en Firestore

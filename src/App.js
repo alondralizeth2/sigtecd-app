@@ -14,6 +14,7 @@ import VerifyEmailLink from './VerifyEmailLink';
 import Terminos from './Terminos';
 import WelcomeQuestions from './WelcomeQuestions';
 import ErrorVerification from './ErrorVerification';
+import DashboardMock from './DashboardMock';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
   <Route path="/cuestionario" element={<WelcomeQuestions />} />
   <Route path="/error-verificacion" element={<ErrorVerification />} />
   <Route path="/dashboard" element={auth.currentUser ? <Dashboard /> : <Navigate to="/login" />} />
+  <Route path="/dashboard-mock" element={<DashboardMock />} />
 </Routes>
   );
 }
