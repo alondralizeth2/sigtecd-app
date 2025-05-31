@@ -1,12 +1,20 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
+import { useAuthState} from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import { auth, db } from './firebase';
 import { doc, updateDoc } from 'firebase/firestore';
 import './App.css';
 
 const Terminos = () => {
+  const [user] = useAuthState(auth);
   const [aceptado, setAceptado] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!user) navigate('/login');
+  }, [user]);
+
 
   const handleAceptar = async () => {
     if (aceptado && auth.currentUser) {

@@ -1,0 +1,214 @@
+/* Estilos específicos para el componente Register */
+.register-page {
+    min-height: 100vh;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .register-header .logo {
+    height: 70px;
+    width: auto;
+  }
+  
+  .home-button {
+    padding: 0.8rem 1.8rem;
+    background: #2C2C2C;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .home-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  }
+  
+  /* Contenedor del formulario */
+  .form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .register-box {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    animation: fadeIn 0.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .register-box h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  /* Estructura del formulario - VERSIÓN CORREGIDA */
+  .input-row {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group {
+    position: relative;
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 2rem;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    background: white;
+    padding: 0 5px;
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 0.9rem;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 15px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .input-group input::placeholder {
+    color: #a0aec0;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  
+  .input-group input:focus::placeholder {
+    opacity: 0.5;
+  }
+  
+  /* Animación para labels al enfocar */
+  .input-group input:focus ~ label,
+  .input-group input:not(:placeholder-shown) ~ label,
+  .input-group select:valid ~ label {
+    top: -18px;
+    left: 8px;
+    font-size: 0.75rem;
+    color: #3498db;
+  }
+  
+  /* Mensajes de error/éxito */
+  .error-message {
+    color: #e74c3c;
+    background: #f8d7da;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .success-message {
+    color: #28a745;
+    background: #d4edda;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  /* Botón de registro */
+  .auth-button {
+    width: 100%;
+    padding: 1rem;
+    background: #2C2C2C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .auth-button:hover:not(:disabled) {
+    background: #000000;
+    transform: translateY(-2px);
+  }
+  
+  .auth-button:disabled {
+    background: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Textos finales */
+  .terms-notice {
+    text-align: center;
+    color: #7f8c8d;
+    margin: 1.5rem 0;
+  }
+  
+  .terms-notice a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .login-redirect {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #7f8c8d;
+  }
+  
+  .login-redirect a {
+    color: #2C2C2C;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  /* Responsive */

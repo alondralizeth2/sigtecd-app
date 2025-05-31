@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './App.css';
+import logo from './logo.jpg';
 
 const Dashboard = () => {
   // Estados
+  const navigate = useNavigate();
   const [showModal, setShowModal] = useState(false);
   const [medicamentos, setMedicamentos] = useState(
     JSON.parse(localStorage.getItem('medicamentos')) || []
@@ -54,11 +57,38 @@ const Dashboard = () => {
     return () => intervalos.forEach(clearTimeout);
   }, [medicamentos]);
 
+  const handleLogout = () => {
+    localStorage.clear();
+    navigate('/');
+  };
+
   return (
     <div className="dashboard-container">
+        <header className="dashboard-header">
+            <img
+            src={logo}
+            alt="Logo de la App"
+            className="app-logo"
+            onClick={() => navigate('/')}
+            />
+            <div className="header-actions">
+                <button
+                 className="btn-comparar"
+                 onClick={() => navigate('/comparador-precios')}>
+                    Comparar Precios
+                 </button>
+
+                 <button 
+                 className="btn-logout"
+                 onClick={handleLogout}
+                 >
+                    Cerrar Sesión
+                </button>
+            </div>
+        </header>
       
-      {/* Header con datos del paciente */}
-      <header className="dashboard-header">
+      {/* Sección de Bienvenida*/}
+     <div className="dashboard-section">
         <div className="patient-info">
           <h1>Bienvenida, {paciente.nombres}</h1>
           <div className="patient-status">
@@ -74,11 +104,11 @@ const Dashboard = () => {
         >
           ＋ Nuevo Medicamento
         </button>
-      </header>
+    </div>
 
       {/* Sección de medicamentos */}
       <div className="dashboard-section">
-        <h2>Tus Medicamentos Activos</h2>
+        <h2>Tus Medicamentos Activos</h2>    
         
         <div className="medicamentos-grid">
           {medicamentos.map((med, index) => (

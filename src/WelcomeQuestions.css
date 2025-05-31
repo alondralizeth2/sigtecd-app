@@ -1,0 +1,159 @@
+/* Estilos específicos para el componente WelcomeQuestions */
+.welcome-questions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8fafc;
+    padding: 2rem;
+  }
+  
+  .welcome-card {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    animation: cardEntrance 0.6s ease-out;
+  }
+  
+  @keyframes cardEntrance {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .welcome-card h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .welcome-card p {
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  /* Estilos del formulario */
+  .questionnaire-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  
+  .welcome-input-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .welcome-input-group label {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .welcome-input-group select,
+  .welcome-input-group input[type="date"],
+  .welcome-input-group input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border-color 0.3s;
+  }
+  
+  .welcome-input-group select:focus,
+  .welcome-input-group input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52,152,219,0.1);
+  }
+  
+  .additional-input {
+    margin-top: 1rem;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  /* Mensaje de error */
+  .welcome-error-message {
+    color: #e74c3c;
+    background: #f8d7da;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  
+  /* Botones */
+  .form-actions {
+    margin-top: 2rem;
+  }
+  
+  .welcome-auth-button {
+    width: 100%;
+    padding: 1rem;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .welcome-auth-button:hover:not(:disabled) {
+    background: #2980b9;
+    transform: translateY(-1px);
+  }
+  
+  .welcome-auth-button:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .welcome-questions-container {
+      padding: 1rem;
+    }
+    
+    .welcome-card {
+      padding: 1.5rem;
+    }
+    
+    .welcome-card h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .welcome-card {
+      padding: 1rem;
+    }
+    
+    .questionnaire-form {
+      gap: 1.2rem;
+    }
+    
+    .welcome-input-group label {
+      font-size: 0.9rem;
+    }
+    
+    .welcome-auth-button {
+      padding: 0.8rem;
+    }
+  }

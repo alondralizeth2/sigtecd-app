@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { auth } from './firebase';
 import { signInWithEmailAndPassword } from "firebase/auth";
+import { useAuthState } from 'react-firebase-hooks/auth';
 import logo from './logo.jpg';
 import './App.css';
 
@@ -10,21 +11,40 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [user] = useAuthState(auth);
   const navigate = useNavigate();
 
-  // Función async correctamente declarada
+  // Redirigir si ya está autenticado
+  useEffect(() => {
+    if (user) navigate('/dashboard');
+  }, [user]);
+
   const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
     setError('');
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
-      navigate('/dashboard');
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      
+      // Verificación adicional del usuario
+      if (!userCredential.user) {
+        throw new Error('No se pudo obtener información del usuario');
+      }
+
+      // Navegar al dashboard después de una breve espera
+      setTimeout(() => {
+        navigate('/dashboard');
+      }, 1000);
+
     } catch (err) {
+      console.error('Error de autenticación:', err);
       switch (err.code) {
         case 'auth/invalid-email':
           setError('Correo electrónico inválido');
+          break;
+        case 'auth/user-disabled':
+          setError('Cuenta deshabilitada');
           break;
         case 'auth/user-not-found':
           setError('Usuario no registrado');
@@ -33,10 +53,11 @@ const Login = () => {
           setError('Contraseña incorrecta');
           break;
         default:
-          setError('Error al iniciar sesión');
+          setError('Error al iniciar sesión: ' + err.message);
       }
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   };
 
   return (
@@ -60,6 +81,7 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
+              autoComplete="username"
             />
           </div>
 
@@ -70,6 +92,7 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
+              autoComplete="current-password"
             />
           </div>
 
@@ -84,7 +107,12 @@ const Login = () => {
             className="auth-button"
             disabled={loading}
           >
-            {loading ? 'Iniciando...' : 'Ingresar'}
+            {loading ? (
+              <div className="loading-indicator">
+                <div className="spinner"></div>
+                Iniciando...
+              </div>
+            ) : 'Ingresar'}
           </button>
 
           <p className="register-link">

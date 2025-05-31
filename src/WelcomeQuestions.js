@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { doc, setDoc } from 'firebase/firestore';
+import { doc, updateDoc, getDoc } from 'firebase/firestore';
 import { auth, db } from './firebase';
-import './App.css';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import './WelcomeQuestions.css';
 
 const enfermedadesCronicas = [
-  'Diabetes',
+  'Diabetes Tipo 1',
+  'Diabetes Tipo 2',
   'Hipertensión',
   'Artritis',
   'Cáncer',
@@ -15,14 +17,30 @@ const enfermedadesCronicas = [
 ];
 
 const WelcomeQuestions = () => {
+  const [user] = useAuthState(auth);
   const [formData, setFormData] = useState({
     enfermedad: '',
     otraEnfermedad: '',
-    tratamientoActual: ''
+    tratamientoActual: '',
+    ultimaRevision: ''
   });
   
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
+  // Cargar datos existentes si ya hay información
+  useEffect(() => {
+    if (user) {
+      const fetchUserData = async () => {
+        const userDoc = await getDoc(doc(db, 'usuarios', user.uid));
+        if (userDoc.exists() && userDoc.data().cuestionario) {
+          setFormData(userDoc.data().cuestionario);
+        }
+      };
+      fetchUserData();
+    }
+  }, [user]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,40 +52,62 @@ const WelcomeQuestions = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    if (!formData.enfermedad) {
-      setError('Selecciona una enfermedad');
-      return;
-    }
+    setLoading(true);
+    setError('');
 
     try {
-      await setDoc(doc(db, 'usuarios', auth.currentUser.uid), {
-        cuestionario: formData
-      }, { merge: true });
-      
+      // Validaciones
+      if (!formData.enfermedad) {
+        throw new Error('Selecciona una enfermedad');
+      }
+
+      if (formData.enfermedad === 'Otra' && !formData.otraEnfermedad) {
+        throw new Error('Especifica tu enfermedad');
+      }
+
+      if (!formData.tratamientoActual) {
+        throw new Error('Indica si sigues un tratamiento');
+      }
+
+      if (!user) throw new Error('Usuario no autenticado');
+
+      await updateDoc(doc(db, 'usuarios', user.uid), {
+        cuestionario: {
+          enfermedad: formData.enfermedad === 'Otra' ? formData.otraEnfermedad : formData.enfermedad,
+          otraEnfermedad: formData.enfermedad === 'Otra' ? '' : formData.otraEnfermedad,
+          tratamientoActual: formData.tratamientoActual,
+          ultimaRevision: formData.ultimaRevision || null
+        },
+        cuestionarioCompleto: true,
+        ultimaActualizacion: new Date()
+      });
+
       navigate('/dashboard');
-      
+
     } catch (error) {
       console.error("Error guardando datos:", error);
-      setError('Ocurrió un error al guardar los datos');
+      setError(error.message);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <div className="modal-overlay">
-      <div className="welcome-modal">
-        <h2>¡Bienvenido! Completa tu perfil</h2>
+    <div className="welcome-questions-container">
+      <div className="welcome-card">
+        <h2>Completa tu perfil médico</h2>
+        <p>Esta información nos ayudará a brindarte una mejor experiencia</p>
         
         <form onSubmit={handleSubmit} className="questionnaire-form">
           <div className="input-group">
-            <label>¿Qué enfermedad crónico-degenerativa padece?</label>
+            <label>¿Qué enfermedad crónica padeces?</label>
             <select
               name="enfermedad"
               value={formData.enfermedad}
               onChange={handleChange}
               required
             >
-              <option value="">Seleccione...</option>
+              <option value="">Selecciona una opción</option>
               {enfermedadesCronicas.map((enfermedad) => (
                 <option key={enfermedad} value={enfermedad}>{enfermedad}</option>
               ))}
@@ -77,34 +117,49 @@ const WelcomeQuestions = () => {
               <input
                 type="text"
                 name="otraEnfermedad"
-                placeholder="Especifique su enfermedad"
+                placeholder="Describe tu enfermedad"
                 value={formData.otraEnfermedad}
                 onChange={handleChange}
-                required
+                required={formData.enfermedad === 'Otra'}
                 className="additional-input"
               />
             )}
           </div>
 
           <div className="input-group">
-            <label>¿Actualmente sigue un tratamiento médico?</label>
+            <label>¿Actualmente sigues un tratamiento médico?</label>
             <select
               name="tratamientoActual"
               value={formData.tratamientoActual}
               onChange={handleChange}
               required
             >
-              <option value="">Seleccione...</option>
-              <option value="Si">Sí</option>
+              <option value="">Selecciona una opción</option>
+              <option value="Sí">Sí</option>
               <option value="No">No</option>
             </select>
           </div>
 
-          {error && <p className="error-message">{error}</p>}
+          <div className="input-group">
+            <label>Fecha de tu última revisión médica (opcional)</label>
+            <input
+              type="date"
+              name="ultimaRevision"
+              value={formData.ultimaRevision}
+              onChange={handleChange}
+              max={new Date().toISOString().split('T')[0]}
+            />
+          </div>
+
+          {error && <div className="error-message">{error}</div>}
 
           <div className="form-actions">
-            <button type="submit" className="auth-button">
-              Siguiente
+            <button 
+              type="submit" 
+              className="auth-button"
+              disabled={loading}
+            >
+              {loading ? 'Guardando...' : 'Completar Perfil'}
             </button>
           </div>
         </form>

@@ -5,7 +5,7 @@ import './App.css';
 
 const Nosotros = () => {
   return (
-    <div className="about-container">
+    <div className="app-container">
       <header className="header">
         <img src={logo} alt="Logo" className="logo" />
         <nav className="nav-buttons">

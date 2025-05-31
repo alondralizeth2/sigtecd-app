@@ -1,0 +1,492 @@
+[
+  {
+    "Tipo de Medicamento": "Insulina Accion Corta/Rapida",
+    "Nombre del Producto": "Insulina Humana Regular",
+    "Concentracion": "100 U/mL",
+    "Presentacion": "Ampolleta 10 ml",
+    "Precio Guadalajara (Aprox.)": "$158.52 MXN",
+    "Precio Ahorro (Aprox.)": "$202 MXN",
+    "Precio Benavides (Aprox.)": "$331 MXN",
+    "Precio Promedio (Aprox.)": "$230.51 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Corta/Rapida",
+    "Nombre del Producto": "Insulex R",
+    "Concentracion": "100 U/mL",
+    "Presentacion": "Ampolleta 10 ml",
+    "Precio Guadalajara (Aprox.)": "$437 MXN",
+    "Precio Ahorro (Aprox.)": "$437 MXN",
+    "Precio Benavides (Aprox.)": "$331 MXN",
+    "Precio Promedio (Aprox.)": "$401.67 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Corta/Rapida",
+    "Nombre del Producto": "Novolin R",
+    "Concentracion": "100 U/mL",
+    "Presentacion": "Ampolleta 10 ml",
+    "Precio Guadalajara (Aprox.)": "-",
+    "Precio Ahorro (Aprox.)": "-",
+    "Precio Benavides (Aprox.)": "$797 MXN",
+    "Precio Promedio (Aprox.)": "$797 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Corta/Rapida",
+    "Nombre del Producto": "Humulin R",
+    "Concentracion": "100 U/mL",
+    "Presentacion": "Cartuchos",
+    "Precio Guadalajara (Aprox.)": "-",
+    "Precio Ahorro (Aprox.)": "-",
+    "Precio Benavides (Aprox.)": "$505 MXN",
+    "Precio Promedio (Aprox.)": "$505 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Intermedia",
+    "Nombre del Producto": "Insulina NPH",
+    "Concentracion": "100 U/mL",
+    "Presentacion": "Ampolleta 10 ml",
+    "Precio Guadalajara (Aprox.)": "$158.53 MXN",
+    "Precio Ahorro (Aprox.)": "$209 MXN",
+    "Precio Benavides (Aprox.)": "$203 MXN",
+    "Precio Promedio (Aprox.)": "$190.18 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Intermedia",
+    "Nombre del Producto": "Insulex N",
+    "Concentracion": "100 U/mL",
+    "Presentacion": "Ampolleta 10 ml",
+    "Precio Guadalajara (Aprox.)": "-",
+    "Precio Ahorro (Aprox.)": "$437 MXN",
+    "Precio Benavides (Aprox.)": "-",
+    "Precio Promedio (Aprox.)": "$437 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Intermedia",
+    "Nombre del Producto": "Humulin N Kwikpen",
+    "Concentracion": "100 U/mL",
+    "Presentacion": "Pluma",
+    "Precio Guadalajara (Aprox.)": "-",
+    "Precio Ahorro (Aprox.)": "$361 MXN",
+    "Precio Benavides (Aprox.)": "$388 MXN",
+    "Precio Promedio (Aprox.)": "$374.50 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Prolongada",
+    "Nombre del Producto": "Insulina Glargina",
+    "Concentracion": "100 U/mL",
+    "Presentacion": "Ampolleta",
+    "Precio Guadalajara (Aprox.)": "-",
+    "Precio Ahorro (Aprox.)": "$499 MXN",
+    "Precio Benavides (Aprox.)": "$1433.50 MXN",
+    "Precio Promedio (Aprox.)": "$966.25 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Prolongada",
+    "Nombre del Producto": "Insulina Glargina",
+    "Concentracion": "-",
+    "Presentacion": "Ampolleta",
+    "Precio Guadalajara (Aprox.)": "-",
+    "Precio Ahorro (Aprox.)": "$788.70 MXN",
+    "Precio Benavides (Aprox.)": "-",
+    "Precio Promedio (Aprox.)": "$788.70 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Prolongada",
+    "Nombre del Producto": "Insulina Glargina",
+    "Concentracion": "-",
+    "Presentacion": "Ampolleta",
+    "Precio Guadalajara (Aprox.)": "-",
+    "Precio Ahorro (Aprox.)": "$2087.36 MXN",
+    "Precio Benavides (Aprox.)": "-",
+    "Precio Promedio (Aprox.)": "$2087.36 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Prolongada",
+    "Nombre del Producto": "Lantus Solostar",
+    "Concentracion": "100 U/mL",
+    "Presentacion": "5 Plumas",
+    "Precio Guadalajara (Aprox.)": "-",
+    "Precio Ahorro (Aprox.)": "$2219 MXN",
+    "Precio Benavides (Aprox.)": "$2219 MXN",
+    "Precio Promedio (Aprox.)": "$2219 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Prolongada",
+    "Nombre del Producto": "Lantus",
+    "Concentracion": "100 U/mL",
+    "Presentacion": "Pluma Precargada",
+    "Precio Guadalajara (Aprox.)": "-",
+    "Precio Ahorro (Aprox.)": "-",
+    "Precio Benavides (Aprox.)": "$610 MXN",
+    "Precio Promedio (Aprox.)": "$610 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Prolongada",
+    "Nombre del Producto": "Abasaglar Kwikpen",
+    "Concentracion": "100 U/mL",
+    "Presentacion": "5 Plumas",
+    "Precio Guadalajara (Aprox.)": "-",
+    "Precio Ahorro (Aprox.)": "-",
+    "Precio Benavides (Aprox.)": "$1742 MXN",
+    "Precio Promedio (Aprox.)": "$1742 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Prolongada",
+    "Nombre del Producto": "Insulina Glargina",
+    "Concentracion": "-",
+    "Presentacion": "Cartucho",
+    "Precio Guadalajara (Aprox.)": "-",
+    "Precio Ahorro (Aprox.)": "-",
+    "Precio Benavides (Aprox.)": "$363 MXN",
+    "Precio Promedio (Aprox.)": "$363 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Insulina Accion Prolongada",
+    "Nombre del Producto": "Lantus",
+    "Concentracion": "100 U/mL",
+    "Presentacion": "Vial 10 ml",
+    "Precio Guadalajara (Aprox.)": "-",
+    "Precio Ahorro (Aprox.)": "$2269 MXN",
+    "Precio Benavides (Aprox.)": "-",
+    "Precio Promedio (Aprox.)": "$2269 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Antidiabetico Oral",
+    "Nombre del Producto": "Metformina Generico",
+    "Concentracion": "500 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$65 MXN",
+    "Precio Ahorro (Aprox.)": "$60 MXN",
+    "Precio Benavides (Aprox.)": "$70 MXN",
+    "Precio Promedio (Aprox.)": "$65 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Antidiabetico Oral",
+    "Nombre del Producto": "Metformina Generico",
+    "Concentracion": "850 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$90 MXN",
+    "Precio Ahorro (Aprox.)": "$82.5 MXN",
+    "Precio Benavides (Aprox.)": "$95 MXN",
+    "Precio Promedio (Aprox.)": "$89.17 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Antidiabetico Oral",
+    "Nombre del Producto": "Metformina Generico",
+    "Concentracion": "1000 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$115 MXN",
+    "Precio Ahorro (Aprox.)": "$107.5 MXN",
+    "Precio Benavides (Aprox.)": "$120 MXN",
+    "Precio Promedio (Aprox.)": "$114.17 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Antidiabetico Oral",
+    "Nombre del Producto": "Glucophage",
+    "Concentracion": "500 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$215 MXN",
+    "Precio Ahorro (Aprox.)": "$205 MXN",
+    "Precio Benavides (Aprox.)": "$225 MXN",
+    "Precio Promedio (Aprox.)": "$215 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Antidiabetico Oral",
+    "Nombre del Producto": "Glucophage",
+    "Concentracion": "850 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$300 MXN",
+    "Precio Ahorro (Aprox.)": "$290 MXN",
+    "Precio Benavides (Aprox.)": "$310 MXN",
+    "Precio Promedio (Aprox.)": "$300 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Antidiabetico Oral",
+    "Nombre del Producto": "Glucophage XR (Liberacion Prolongada)",
+    "Concentracion": "500 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$260 MXN",
+    "Precio Ahorro (Aprox.)": "$250 MXN",
+    "Precio Benavides (Aprox.)": "$270 MXN",
+    "Precio Promedio (Aprox.)": "$260 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Antidiabetico Oral",
+    "Nombre del Producto": "Glucophage XR (Liberacion Prolongada)",
+    "Concentracion": "750 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$330 MXN",
+    "Precio Ahorro (Aprox.)": "$320 MXN",
+    "Precio Benavides (Aprox.)": "$340 MXN",
+    "Precio Promedio (Aprox.)": "$330 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Antidiabetico Oral",
+    "Nombre del Producto": "Glucophage XR (Liberacion Prolongada)",
+    "Concentracion": "1000 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$400 MXN",
+    "Precio Ahorro (Aprox.)": "$390 MXN",
+    "Precio Benavides (Aprox.)": "$410 MXN",
+    "Precio Promedio (Aprox.)": "$400 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Antidiabetico Oral",
+    "Nombre del Producto": "Januvia (Sitagliptina + Metformina)",
+    "Concentracion": "50/500 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1050 MXN",
+    "Precio Ahorro (Aprox.)": "$1030 MXN",
+    "Precio Benavides (Aprox.)": "$1070 MXN",
+    "Precio Promedio (Aprox.)": "$1050 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Antidiabetico Oral",
+    "Nombre del Producto": "Janumet XR (Sitagliptina + Metformina LP)",
+    "Concentracion": "50/500 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1150 MXN",
+    "Precio Ahorro (Aprox.)": "$1130 MXN",
+    "Precio Benavides (Aprox.)": "$1170 MXN",
+    "Precio Promedio (Aprox.)": "$1150 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor de la DPP-4",
+    "Nombre del Producto": "Sitagliptina (Januvia)",
+    "Concentracion": "100 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1000 MXN",
+    "Precio Ahorro (Aprox.)": "$980 MXN",
+    "Precio Benavides (Aprox.)": "$1020 MXN",
+    "Precio Promedio (Aprox.)": "$1000 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor de la DPP-4",
+    "Nombre del Producto": "Sitagliptina (Generico)",
+    "Concentracion": "100 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$750 MXN",
+    "Precio Ahorro (Aprox.)": "$730 MXN",
+    "Precio Benavides (Aprox.)": "$770 MXN",
+    "Precio Promedio (Aprox.)": "$750 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor de la DPP-4",
+    "Nombre del Producto": "Vildagliptina (Galvus)",
+    "Concentracion": "50 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$900 MXN",
+    "Precio Ahorro (Aprox.)": "$880 MXN",
+    "Precio Benavides (Aprox.)": "$920 MXN",
+    "Precio Promedio (Aprox.)": "$900 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor de la DPP-4",
+    "Nombre del Producto": "Vildagliptina + Metformina (Eucreas)",
+    "Concentracion": "50/500 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$950 MXN",
+    "Precio Ahorro (Aprox.)": "$930 MXN",
+    "Precio Benavides (Aprox.)": "$970 MXN",
+    "Precio Promedio (Aprox.)": "$950 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor de la DPP-4",
+    "Nombre del Producto": "Linagliptina (Trazenta)",
+    "Concentracion": "5 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1100 MXN",
+    "Precio Ahorro (Aprox.)": "$1080 MXN",
+    "Precio Benavides (Aprox.)": "$1120 MXN",
+    "Precio Promedio (Aprox.)": "$1100 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor de la DPP-4",
+    "Nombre del Producto": "Saxagliptina (Onglyza)",
+    "Concentracion": "5 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$950 MXN",
+    "Precio Ahorro (Aprox.)": "$930 MXN",
+    "Precio Benavides (Aprox.)": "$970 MXN",
+    "Precio Promedio (Aprox.)": "$950 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor de la DPP-4",
+    "Nombre del Producto": "Alogliptina (Nesina)",
+    "Concentracion": "25 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$850 MXN",
+    "Precio Ahorro (Aprox.)": "$830 MXN",
+    "Precio Benavides (Aprox.)": "$870 MXN",
+    "Precio Promedio (Aprox.)": "$850 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Agonista del receptor GLP-1",
+    "Nombre del Producto": "Semaglutida (Ozempic)",
+    "Concentracion": "Solucion inyectable en pluma precargada (promedio)",
+    "Presentacion": "1 pluma",
+    "Precio Guadalajara (Aprox.)": "$3000 MXN",
+    "Precio Ahorro (Aprox.)": "$3000 MXN",
+    "Precio Benavides (Aprox.)": "$3050 MXN",
+    "Precio Promedio (Aprox.)": "$3016.67 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Agonista del receptor GLP-1",
+    "Nombre del Producto": "Semaglutida (Rybelsus - oral)",
+    "Concentracion": "Promedio dosis",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$3300 MXN",
+    "Precio Ahorro (Aprox.)": "$3300 MXN",
+    "Precio Benavides (Aprox.)": "$3350 MXN",
+    "Precio Promedio (Aprox.)": "$3316.67 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Agonista del receptor GLP-1",
+    "Nombre del Producto": "Liraglutida (Victoza)",
+    "Concentracion": "Solucion inyectable en pluma precargada",
+    "Presentacion": "3 plumas",
+    "Precio Guadalajara (Aprox.)": "$3500 MXN",
+    "Precio Ahorro (Aprox.)": "$3450 MXN",
+    "Precio Benavides (Aprox.)": "$3550 MXN",
+    "Precio Promedio (Aprox.)": "$3500 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Agonista del receptor GLP-1",
+    "Nombre del Producto": "Dulaglutida (Trulicity)",
+    "Concentracion": "Solucion inyectable en pluma precargada",
+    "Presentacion": "4 plumas",
+    "Precio Guadalajara (Aprox.)": "$3700 MXN",
+    "Precio Ahorro (Aprox.)": "$3650 MXN",
+    "Precio Benavides (Aprox.)": "$3750 MXN",
+    "Precio Promedio (Aprox.)": "$3700 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Agonista del receptor GLP-1",
+    "Nombre del Producto": "Exenatida (Byetta)",
+    "Concentracion": "Solucion inyectable en pluma precargada",
+    "Presentacion": "2 plumas",
+    "Precio Guadalajara (Aprox.)": "$2150 MXN",
+    "Precio Ahorro (Aprox.)": "$2100 MXN",
+    "Precio Benavides (Aprox.)": "$2200 MXN",
+    "Precio Promedio (Aprox.)": "$2150 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Agonista del receptor GLP-1",
+    "Nombre del Producto": "Exenatida de liberación prolongada (Bydureon)",
+    "Concentracion": "Suspension inyectable en pluma precargada",
+    "Presentacion": "4 plumas",
+    "Precio Guadalajara (Aprox.)": "$3300 MXN",
+    "Precio Ahorro (Aprox.)": "$3250 MXN",
+    "Precio Benavides (Aprox.)": "$3350 MXN",
+    "Precio Promedio (Aprox.)": "$3300 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Agonista del receptor GLP-1",
+    "Nombre del Producto": "Lixisenatida (Lyxumia)",
+    "Concentracion": "Solucion inyectable en pluma precargada",
+    "Presentacion": "1 pluma",
+    "Precio Guadalajara (Aprox.)": "$1850 MXN",
+    "Precio Ahorro (Aprox.)": "$1800 MXN",
+    "Precio Benavides (Aprox.)": "$1900 MXN",
+    "Precio Promedio (Aprox.)": "$1850 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor del SGLT2",
+    "Nombre del Producto": "Canagliflozina (Invokana)",
+    "Concentracion": "100 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1050 MXN",
+    "Precio Ahorro (Aprox.)": "$1030 MXN",
+    "Precio Benavides (Aprox.)": "$1070 MXN",
+    "Precio Promedio (Aprox.)": "$1050 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor del SGLT2",
+    "Nombre del Producto": "Canagliflozina (Invokana)",
+    "Concentracion": "300 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1250 MXN",
+    "Precio Ahorro (Aprox.)": "$1230 MXN",
+    "Precio Benavides (Aprox.)": "$1270 MXN",
+    "Precio Promedio (Aprox.)": "$1250 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor del SGLT2",
+    "Nombre del Producto": "Dapagliflozina (Forxiga)",
+    "Concentracion": "10 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1100 MXN",
+    "Precio Ahorro (Aprox.)": "$1080 MXN",
+    "Precio Benavides (Aprox.)": "$1120 MXN",
+    "Precio Promedio (Aprox.)": "$1100 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor del SGLT2",
+    "Nombre del Producto": "Empagliflozina (Jardiance)",
+    "Concentracion": "10 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1150 MXN",
+    "Precio Ahorro (Aprox.)": "$1130 MXN",
+    "Precio Benavides (Aprox.)": "$1170 MXN",
+    "Precio Promedio (Aprox.)": "$1150 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor del SGLT2",
+    "Nombre del Producto": "Empagliflozina (Jardiance)",
+    "Concentracion": "25 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1350 MXN",
+    "Precio Ahorro (Aprox.)": "$1330 MXN",
+    "Precio Benavides (Aprox.)": "$1370 MXN",
+    "Precio Promedio (Aprox.)": "$1350 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor del SGLT2",
+    "Nombre del Producto": "Ertugliflozina (Steglatro)",
+    "Concentracion": "5 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1000 MXN",
+    "Precio Ahorro (Aprox.)": "$980 MXN",
+    "Precio Benavides (Aprox.)": "$1020 MXN",
+    "Precio Promedio (Aprox.)": "$1000 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor del SGLT2",
+    "Nombre del Producto": "Ertugliflozina (Steglatro)",
+    "Concentracion": "15 mg",
+    "Presentacion": "Caja con 30 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1200 MXN",
+    "Precio Ahorro (Aprox.)": "$1180 MXN",
+    "Precio Benavides (Aprox.)": "$1220 MXN",
+    "Precio Promedio (Aprox.)": "$1200 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor del SGLT2",
+    "Nombre del Producto": "Canagliflozina + Metformina (Vokanamet)",
+    "Concentracion": "50/500 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1150 MXN",
+    "Precio Ahorro (Aprox.)": "$1130 MXN",
+    "Precio Benavides (Aprox.)": "$1170 MXN",
+    "Precio Promedio (Aprox.)": "$1150 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor del SGLT2",
+    "Nombre del Producto": "Dapagliflozina + Metformina XR (Xigduo XR)",
+    "Concentracion": "10/500 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1250 MXN",
+    "Precio Ahorro (Aprox.)": "$1230 MXN",
+    "Precio Benavides (Aprox.)": "$1270 MXN",
+    "Precio Promedio (Aprox.)": "$1250 MXN"
+  },
+  {
+    "Tipo de Medicamento": "Inhibidor del SGLT2",
+    "Nombre del Producto": "Empagliflozina + Metformina (Synjardy)",
+    "Concentracion": "5/500 mg",
+    "Presentacion": "Caja con 28 tabletas",
+    "Precio Guadalajara (Aprox.)": "$1300 MXN",
+    "Precio Ahorro (Aprox.)": "$1280 MXN",
+    "Precio Benavides (Aprox.)": "$1320 MXN",
+    "Precio Promedio (Aprox.)": "$1300 MXN"
+  }
+]
