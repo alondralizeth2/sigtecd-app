@@ -31,8 +31,5 @@ Vitality Hub es una plataforma web diseñada para mejorar la adherencia terapéu
 
 ---
 
-## 🧪 ¿Cómo correr el proyecto?
-
-1. Clona este repositorio:  
-   ```bash
-   git clone https://github.com/TuUsuario/VitalityHub.git
+## Accede al prototipo!!
+https://sigtecd.web.app/
